@@ -1,9 +1,9 @@
 package Level2;
 
-public class OrderArray {	
-
+public class OrderArray {
 	
-	public static void orderAnArray(int[] array){
+	
+	public static int[] orderAnArray(int[] array){
 		
 		for (int i=0; i<array.length; i++){
 			        int min = array[i];
@@ -20,8 +20,7 @@ public class OrderArray {
 			            array[min_i] = tmp;
 			        }
 			     }
-		 System.out.println(array);
+		return array;
 			}
-			
-	}
 
+}
